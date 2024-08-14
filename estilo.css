@@ -1,223 +1,318 @@
-.autour-one-regular {
-    font-family: "Autour One", system-ui;
-    font-weight: 400;
+/* Estilo para a fonte "Autour One" */
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
     font-style: normal;
 }
-  
-/* Estilos gerais para o corpo do documento */
+
+/* Estilo padrão para o corpo da página */
 body {
-    display: block;
-    margin: 0; /* Removendo margens padrão */
-    padding: 0; /* Removendo preenchimento padrão */
-    box-sizing: border-box; /* Incluindo borda e preenchimento no tamanho total */
+    background-image: url("imagens/fundo.png");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;    
+}
+
+/* Estilos para os cabeçalhos */
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: "Autour One", system-ui;
+p {
+    text-align: center;
 }
 
-/* Estilos para o cabeçalho */
+/* Estilos gerais para o cabeçalho */
 header {
     display: flex;
     background-image: url("imagens/capa.png");
-    color: white; /* Cor do texto */
-    padding: 1rem; /* Preenchimento interno */
+    color: white;
+    padding: 1rem;
 }
 
-/* Estilos para a lista de navegação */
+/* Estilos para a navegação */
 nav ul {
-    list-style-type: none; /* Removendo marcadores de lista */
-    padding: 0; /* Removendo preenchimento interno */
-    display: flex; /* Exibição como flexbox */
-    justify-content: center; /* Alinhamento centralizado dos itens */
-    gap: 1rem; /* Espaço entre os itens */
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-/* Estilos para cada item da lista de navegação */
 nav ul li {
-    margin: 0; /* Removendo margens */
-    font-family: "Autour One", system-ui; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
-/* Estilos para cada link na lista de navegação */
 nav ul li a {
-    color: white; /* Cor do texto */
-    text-decoration: none; /* Removendo sublinhado */
-    padding: 0.5rem 1rem; /* Preenchimento interno */
-    transition: background-color 0.3s; /* Transição suave da cor de fundo */
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
 }
 
-/* Estilos quando o mouse passa por cima do link */
 nav ul li a:hover {
-    background-color: #ff6a06; /* Cor de fundo ao passar o mouse */
+    background-color: #FF6200;
     border-radius: 50px;
 }
 
 /* Estilos para o logotipo */
 .logo {
     margin-right: 200px;
-    height: 60px; /* Altura do logotipo */
-    transition: transform 0.3s ease-in-out; /* Transição suave */
-    position: relative; /* Posição relativa */
+    height: 60px;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Estilos quando o mouse passa por cima do logotipo */
 .logo:hover {
-    transform: scale(1.1); /* Aumentando o tamanho */
+    transform: scale(1.15);
 }
 
+.imagem-secao {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagem-secao:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos principais */
 main {
-    color: #233717;
+    color: #0e0019;
 }
 
-.container{
+.container {
+    margin: 40px;
     display: flex;
-    gap: 2rem;
-    justify-content: space-evenly;
-    align-items: stretch;
-}
-    
-.item {
-    border-radius: 2rem;
-    color: #233717;
-    padding: 2rem; /* Define o preenchimento dos itens em pixels */
-    text-align: center;
-    font-size: large;
-    flex: 1; /* Faz com que todos os itens tenham o mesmo tamanho */
+    gap: 4rem;
+
 }
 
-.item p {
-    text-align: justify;
+.item,
+.item2 {
+    border-radius: 1rem;
+    text-align: center;
+    flex: 1;
+}
+
+.item {
+
+    font-size: large;
 }
 
 .item2 {
-    border-radius: 2rem;
-    color: #cc5200;
-    padding: 2rem; /* Define o preenchimento dos itens em pixels */
-    text-align: center;
-    flex: 1; /* Faz com que todos os itens tenham o mesmo tamanho */
+    color: #FFFFFF;
 }
 
+.item p,
 .item2 p {
     text-align: justify;
 }
 
-/* Estilos para legenda de figura */
 figcaption {
-    font-size: xx-small; /* Tamanho da fonte pequeno */
+    font-size: xx-small;
 }
 
-/* Estilos para seções */
 section {
-    padding: 2rem; /* Preenchimento interno */
+    padding: 40px;
 }
 
 /* Estilos para formulários */
 form {
-    display: flex; /* Exibição como flexbox */
-    flex-direction: column; /* Direção da coluna */
-    align-items: center; /* Alinhamento centralizado dos itens */
-    margin-bottom: 2rem; /* Margem inferior */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
-/* Estilos para rótulos dos formulários */
 form label {
-    margin-bottom: 0.5rem; /* Margem inferior */
-    width: 100%; /* Largura total */
-    max-width: 400px; /* Largura máxima */
+    margin-bottom: 0.5rem;
+    width: 100%;
+    max-width: 400px;
 }
 
-/* Estilos para inputs e textareas dos formulários */
 form input,
 form textarea {
-    margin-bottom: 1rem; /* Margem inferior */
-    padding: 0.5rem; /* Preenchimento interno */
-    border: 1px solid #ddd; /* Borda com cor */
-    border-radius: 5px; /* Borda arredondada */
-    width: 100%; /* Largura total */
-    max-width: 400px; /* Largura máxima */
-    transition: border-color 0.3s; /* Transição suave da cor da borda */
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    transition: border-color 0.3s;
 }
 
-/* Estilos quando o input ou textarea recebe foco */
 form input:focus,
 form textarea:focus {
-    border-color: #4CAF50; /* Cor da borda ao focar */
+    border-color: #340060;
 }
 
-/* Estilos para botões dos formulários */
 form button {
-    padding: 0.5rem 1rem; /* Preenchimento interno */
-    background-color: #4CAF50; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Borda arredondada */
-    cursor: pointer; /* Cursor de ponteiro */
-    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+    padding: 0.5rem 1rem;
+    background-color: #FF6200;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Estilos quando o mouse passa por cima do botão */
 form button:hover {
-    background-color: #45a049; /* Cor de fundo ao passar o mouse */
-    transform: translateY(-3px); /* Movendo para cima */
+    background-color: #340060;
+    transform: translateY(-3px);
 }
 
-/* Estilos para lista de postagens */
+/* Estilos para as campanhas */
+.campaign {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.campaign img {
+    max-width: 100%;
+    min-width: 200px;
+    max-height: 300px;
+    min-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.campaign .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.campaign .buttons button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #482b60
+}
+
+.campaign .buttons button:hover {
+    color: #fe6601;
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#commentInput {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#submitComment {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #fe6601;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para as postagens */
 #lista-postagens {
-    display: flex; /* Exibição como flexbox */
-    flex-direction: column; /* Direção da coluna */
-    align-items: center; /* Alinhamento centralizado dos itens */
-    gap: 1rem; /* Espaço entre os itens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
-/* Estilos para cada postagem */
 .postagem {
-    background-color: #f9f9f9; /* Cor de fundo da postagem */
-    border: 1px solid #ddd; /* Borda com cor */
-    padding: 1rem; /* Preenchimento interno */
-    border-radius: 5px; /* Borda arredondada */
-    width: 100%; /* Largura total */
-    max-width: 600px; /* Largura máxima */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Estilos para imagens dentro das postagens */
 .postagem img {
-    max-width: 100%; /* Largura máxima */
-    height: auto; /* Altura automática */
-    margin-top: 1rem; /* Margem superior */
-    border-radius: 5px; /* Borda arredondada */
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 5px;
 }
 
-/* Estilos quando o mouse passa por cima da postagem */
 .postagem:hover {
-    transform: translateY(-5px); /* Movendo para cima */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilos para o rodapé */
 footer {
-    background-color: #4CAF50; /* Cor de fundo do rodapé */
-    color: white; /* Cor do texto */
-    text-align: center; /* Alinhamento centralizado do texto */
-    padding: 1rem; /* Preenchimento interno */
+    background-color: #340060;
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
 
-/* Estilos para o menu sanduíche em telas menores */
+/* Estilos para o menu Sanduíche */
 .menu-sanduiche {
-    display: none; /* Ocultando o menu sanduíche */
-    background: none; /* Fundo transparente */
-    border: none; /* Sem borda */
-    font-size: 2rem; /* Tamanho da fonte */
-    color: white; /* Cor do texto */
+    margin: 4px;
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
 }
 
-/* Media query para telas menores */
+/* Media Queries */
 @media (max-width: 768px) {
-    /* Exibindo o menu sanduíche */
     .menu-sanduiche {
         display: block;
     }
@@ -227,52 +322,37 @@ footer {
         display: block;
     }
 
-    /* Ocultando a lista de navegação */
     nav ul {
         display: none;
         flex-direction: column;
         gap: 0;
     }
 
-    /* Estilos para cada item da lista de navegação em telas menores */
     nav ul li {
         width: 100%;
         text-align: center;
         background-color: none;
     }
 
-    /* Estilos para cada link na lista de navegação em telas menores */
     nav ul li a {
         display: flex;
         padding: 1rem 0;
         width: 100%;
     }
 
-    .container{
-        display: flex;
+    .container {
         gap: 1rem;
         justify-content: center;
-        align-items: center;
         flex-direction: column;
-        flex-wrap: nowrap;
         align-content: center;
     }
-
-    @media (max-width: 480px) {
-        .container{
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-content: center;
-        }
-    }
-    /* Estilos quando o menu está ativo */
-    #menu.active {
-        display: flex;
-    }
-
 }
 
+@media (max-width: 480px) {
+    .container {
+        gap: 1rem;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+    }
+}

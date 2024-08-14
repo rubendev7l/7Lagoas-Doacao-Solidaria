@@ -15,16 +15,17 @@
 <body>
     <header>
         <a href="index.html">
-            <img src="imagens/logo.png" alt="Logotipo 7Lagoas Doação Solidária" class="logo">
+            <img src="imagens/logo.png" alt="Logotipo 7Lagoas Doação Solidária" class="logo" />
         </a>
         <nav>
-            <button class="menu-sanduiche" id="menu-toggle">☰</button>
-            <ul id="menu">
-                <li><a href="index.html">INÍCIO</a></li>
-                <li><a href="sobre.html">SOBRE</a></li>
-                <li><a href="campanhas.html">CAMPANHAS</a></li>
-                <li><a href="contato.html">CONTATO</a></li>
-                <li><a href="cadastro.html">CADASTRO</a></li>
+            <button class="menu-sanduiche" id="menu-toggle" tabindex="0">☰</button>
+            <ul id="menu" role="navigation">
+                <li><a href="index.html" title="Página Inicial" tabindex="0">INÍCIO</a></li>
+                <li><a href="sobre.html" title="Página Sobre" tabindex="0">SOBRE</a></li>
+                <li><a href="campanhas.html" title="Página Campanhas" tabindex="0">CAMPANHAS</a></li>
+                <li><a href="contato.html" title="Página Contato" tabindex="0">CONTATO</a></li>
+                <li><a href="cadastro.html" title="Página Cadastro" tabindex="0">CADASTRO</a></li>
+                <li><a href="login.html" title="Página Login" tabindex="0">LOGIN</a></li>
             </ul>
         </nav>
     </header>
@@ -35,25 +36,35 @@
 
                 <div class="item">
                     <h3>Campanhas Atuais</h3>
-                    <div class="grid-container">
+                    <div id="campaigns"></div>
                         <!-- Dynamic Campaign Cards will be added here -->
                     </div>
                 </div>
                 <div class="item2">
                     <h3>Postar Atualizações</h3>
-                    <form id="formulario-postagem">
-                        <label for="titulo">Título:</label>
-                        <input type="text" id="titulo" name="titulo" required>
-                        <label for="conteudo">Conteúdo:</label>
-                        <textarea id="conteudo" name="conteudo" required></textarea>
-                        <label for="imagem-postagem">Imagem (opcional):</label>
-                        <input type="file" id="imagem-postagem" name="imagem-postagem">
-                        <button type="submit">Postar</button>
-                    </form>
-                    <div id="lista-atualizacoes" class="grid-container"></div>
+                    <form id="newCampaignForm">
+                        <input type="text" id="campaignTitle" placeholder="Título da Campanha" required>
+                        <textarea id="campaignDescription" placeholder="Descrição da Campanha" required></textarea>
+                        <input type="file" id="campaignImage" accept="image/*" required>
+                        <button type="submit">Postar Campanha</button>
+                    </form>                    
+                    <div id="campaigns"></div>
                 </div>
         </section>
     </main>
+    <div id="campaigns"></div>
+
+    <!-- Modal para comentários -->
+    <div id="commentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Comentários</h3>
+            <div id="commentsContainer"></div>
+            <textarea id="commentInput" placeholder="Adicione um comentário..."></textarea>
+            <button id="submitComment">Comentar</button>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2023 Projeto 7Lagoas Doação Solidária. Todos os direitos reservados.</p>
     </footer>
