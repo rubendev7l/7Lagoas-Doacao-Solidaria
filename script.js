@@ -6,25 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('menu').classList.toggle('active');
     });
 
-    // Função para alternar o menu lateral
-    document.addEventListener("DOMContentLoaded", function () {
-        // Seleciona o container e o botão de menu
-        var container = document.querySelector("#container");
-        var botaoMenu = document.querySelector("#botaoMenu");
-
-        // Adiciona um evento de clique ao botão de menu
-        botaoMenu.addEventListener("click", function () {
-            // Verifica se a classe 'menu-open' está presente no container
-            if (container.classList.contains("menu-open")) {
-                // Remove a classe 'menu-open'
-                container.classList.remove("menu-open");
-            } else {
-                // Adiciona a classe 'menu-open'
-                container.classList.add("menu-open");
-            }
-        });
-    });
-
     // Função para lidar com o envio do formulário de nova campanha
     document.getElementById('newCampaignForm').addEventListener('submit', function (e) {
         // Evita o recarregamento da página ao submeter o formulário

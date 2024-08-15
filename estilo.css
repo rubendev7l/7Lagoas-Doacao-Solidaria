@@ -31,7 +31,7 @@ p {
 
 /* Estilos gerais para o cabeçalho */
 header {
-    display: flex;
+    display: flexbox;
     background-image: url("imagens/capa.png");
     color: white;
     padding: 1rem;
@@ -301,58 +301,86 @@ footer {
     padding: 1rem;
 }
 
-/* Estilos para o menu Sanduíche */
+/* Estilos para o menu sanduíche em telas menores */
 .menu-sanduiche {
-    margin: 4px;
-    display: none;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: white;
+    display: none; /* Ocultando o menu sanduíche */
+    background: none; /* Fundo transparente */
+    border: none; /* Sem borda */
+    font-size: 2rem; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+    text-align: center;
 }
 
-/* Media Queries */
+/* Media query para telas menores */
 @media (max-width: 768px) {
+    /* Exibindo o menu sanduíche */
     .menu-sanduiche {
         display: block;
     }
 
     header {
-        background-image: url(imagens/capa_responsiva.png);
+        background-image: url(imagens/capa.png);
+        background-size: cover;
         display: block;
     }
 
+    /* Ocultando a lista de navegação */
     nav ul {
         display: none;
         flex-direction: column;
+        align-items: center;
         gap: 0;
     }
 
+    /* Estilos para cada item da lista de navegação em telas menores */
     nav ul li {
         width: 100%;
-        text-align: center;
         background-color: none;
     }
 
+    /* Estilos para cada link na lista de navegação em telas menores */
     nav ul li a {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 1rem 0;
         width: 100%;
+
     }
 
-    .container {
+    .container{
+        display: flex;
         gap: 1rem;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
+        flex-wrap: nowrap;
         align-content: center;
     }
-}
 
-@media (max-width: 480px) {
-    .container {
-        gap: 1rem;
-        justify-content: center;
-        flex-direction: column;
-        align-content: center;
+    .imagem-secao {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+        border-radius: 10px;
     }
+
+    @media (max-width: 480px) {
+        .container{
+            display: flex;
+            width: 100%;
+            margin: 0;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+        }
+    }
+    /* Estilos quando o menu está ativo */
+    #menu.active {
+        display: flex;
+    }
+
 }
