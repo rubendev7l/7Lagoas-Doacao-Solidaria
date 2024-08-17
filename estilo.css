@@ -7,7 +7,7 @@
 
 /* Estilo padrão para o corpo da página */
 body {
-    background-image: url("imagens/fundo.png");
+    background-image: url("imagens/fundo.svg");
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
@@ -32,8 +32,9 @@ p {
 /* Estilos gerais para o cabeçalho */
 header {
     display: flexbox;
-    background-image: url("imagens/capa.png");
-    color: white;
+    background-image: url("imagens/capa.svg");
+    background-size: cover;
+    background-position: center;
     padding: 1rem;
 }
 
@@ -77,7 +78,6 @@ nav ul li a:hover {
 
 .imagem-secao {
     width: 400px;
-    height: 350px;
     object-fit: cover;
     border-radius: 20px;
     transition: transform 0.3s ease-in-out;
@@ -319,9 +319,8 @@ footer {
     }
 
     header {
-        background-image: url(imagens/capa.png);
+        background-image: url(imagens/capa.svg);
         background-size: cover;
-        display: block;
     }
 
     /* Ocultando a lista de navegação */
@@ -344,8 +343,7 @@ footer {
         flex-direction: column;
         align-items: center;
         padding: 1rem 0;
-        width: 100%;
-
+        cursor: pointer;
     }
 
     .container{

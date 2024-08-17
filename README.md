@@ -25,14 +25,17 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 
 🖼️ Freepik - Imagens e vetores para ilustrações e design.
 
+✒ CorelDraw - Arte edição e criação de designs.
+
 
 ### 🚀 Funcionalidades Principais
 
 Cadastro de Doações: Permite que os usuários cadastrem as roupas que desejam doar.
 
-Busca de Necessidades: Facilitando que quem precisa encontre as peças que estão disponíveis.
+Busca de Necessidades por pedido: Facilitando que quem precisa encontre uma possível ajuda.
 
 Geolocalização: Ajuda os doadores e beneficiários a encontrarem pontos de coleta e entrega.
+(não implementado ainda)
 
 Notificações em Tempo Real: Avisos instantâneos para novos pedidos e ofertas de doações.
 
