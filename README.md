@@ -5,6 +5,10 @@
 
 Este é o repositório oficial do 7Lagoas Doação Solidária, um aplicativo dedicado a facilitar a doação de roupas na cidade de Sete Lagoas - MG. Aqui, você pode explorar o código-fonte, colaborar no desenvolvimento e contribuir para fazer a diferença na vida de muitas pessoas!
 
+## Apresentação da Proposta 📃
+
+A apresentação da proposta pode ser encontrada [aqui](docs/Proposta_Projeto.pdf).
+
 
 ### 📱 Visão Geral do Projeto
 
