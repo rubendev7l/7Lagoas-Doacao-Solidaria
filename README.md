@@ -7,7 +7,7 @@ Este é o repositório oficial do 7Lagoas Doação Solidária, um aplicativo ded
 
 ## Apresentação da Proposta 📃
 
-Você pode acessar a proposta do trabalho clicando [aqui](https://github.com/seu-usuario/seu-repositorio/raw/main/docs/Proposta_Projeto.pdf).
+Você pode acessar a proposta do trabalho clicando [aqui](https://https://github.com/rubendev7l/7Lagoas-Doacao-Solidaria/blob/main/docs/Proposta_Projeto.pdf).
 
 
 
